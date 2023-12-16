@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Fotokiosk2",
+  "className": "ТипБумаги",
+  "enumObjects": {
+    "Глянцевая": "Глянцевая",
+    "Матовая": "Матовая"
+  }
+}

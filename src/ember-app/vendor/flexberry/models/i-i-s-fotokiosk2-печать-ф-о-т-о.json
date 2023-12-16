@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISFotokiosk2ПечатьФОТО",
+  "modelName": "i-i-s-fotokiosk2-печать-ф-о-т-о",
+  "className": "ПечатьФОТО",
+  "nameSpace": "IIS.Fotokiosk2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаСоздания",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "способОплаты",
+      "type": "i-i-s-fotokiosk2-тип-оплаты",
+      "flexberryType": "ТипОплаты",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "фото",
+      "relatedTo": "i-i-s-fotokiosk2-фото",
+      "inverse": "печатьФОТО"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПечатьФОТОE",
+      "modelName": "i-i-s-fotokiosk2-печать-ф-о-т-о",
+      "attrs": [
+        {
+          "name": "датаСоздания",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "способОплаты",
+          "caption": "Способ оплаты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ФотоE",
+          "caption": "Фото",
+          "name": "фото",
+          "relatedTo": "i-i-s-fotokiosk2-фото",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПечатьФОТОL",
+      "modelName": "i-i-s-fotokiosk2-печать-ф-о-т-о",
+      "attrs": [
+        {
+          "name": "датаСоздания",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "способОплаты",
+          "caption": "Способ оплаты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

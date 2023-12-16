@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk2-услуги-e",
+  "editForm": "i-i-s-fotokiosk2-услуги-e",
+  "external": false,
+  "caption": "Услуги",
+  "name": "IISFotokiosk2УслугиL",
+  "className": "УслугиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk2-услуги",
+      "modelProjection": "УслугиL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Услуги",
+  "name": "IISFotokiosk2УслугиE",
+  "className": "УслугиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk2-услуги",
+      "modelProjection": "УслугиE"
+    }
+  ]
+}
